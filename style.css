@@ -1,0 +1,147 @@
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Menu */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Contenants */
+.intro, .services, .about-team, .contact-form, .mosaic {
+    margin: 20px;
+}
+
+/* Services */
+.services, .team-gallery, .grid-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services .service-item, .team-gallery img, .grid-container img {
+    flex: 1;
+    text-align: center;
+}
+
+.grid-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Form */
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form select, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services, .team-gallery, .grid-container {
+        flex-direction: column;
+    }
+
+    .contact-form input, .contact-form select, .contact-form button {
+        width: 100%;
+    }
+
+   
+    .logo {
+        margin: 10px 0;
+    }
+
+  
+    .grid-container img, .team-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-item, .about-team, .intro, .contact-form, .mosaic {
+        margin: 10px;
+    }
+}
+
+/* For mobiles */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .services .service-item, .team-gallery img, .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .contact-form label, .contact-form input, .contact-form select, .contact-form button {
+        font-size: 14px;
+    }
+
+    /* Margin and padding */
+    .service-item, .about-team, .intro, .contact-form, .mosaic {
+        margin: 5px;
+    }
+
+    
+    .grid-container, .team-gallery {
+        flex-direction: column;
+    }
+}
