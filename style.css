@@ -1,4 +1,4 @@
-/* General settings */
+/* General Settings*/
 * {
     margin: 0;
     padding: 0;
@@ -6,142 +6,155 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header and Menu */
+/* Header Information*/
 header {
-    background-color: #444;
+    background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 15px 0;
     text-align: center;
 }
 
-header nav ul {
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.logo {
-    font-size: 2em;
-    margin: 20px 0;
-}
-
-/* Contenants */
-.intro, .services, .about-team, .contact-form, .mosaic {
-    margin: 20px;
-}
-
-/* Services */
-.services, .team-gallery, .grid-container {
-    display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.services .service-item, .team-gallery img, .grid-container img {
-    flex: 1;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Intro */
+.intro {
+    padding: 20px;
     text-align: center;
+    background-color: #e2e2e2;
+    margin-top: 15px;
 }
 
-.grid-container img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
+.intro p {
+    font-size: 18px;
+}
+
+details summary {
+    font-weight: 500;
+    color: #1a73e8;
+    cursor: pointer;
+}
+
+details summary:hover {
+    text-decoration: underline;
+    color: #1a73e8; 
+}
+
+/*  */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+    background-color: #fafafa;
     border-radius: 8px;
-}
-
-/* Form */
-.contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact-form input, .contact-form select, .contact-form button {
-    width: 100%;
-    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
 
-/* Footer */
-footer {
-    background-color: #444;
+.service-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"],
+.contact-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #333;
     color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/*Footer */
+footer {
     text-align: center;
     padding: 10px;
+    background-color: #333;
+    color: #fff;
     margin-top: 20px;
-}
-
-
-/* For tablets */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .services, .team-gallery, .grid-container {
-        flex-direction: column;
-    }
-
-    .contact-form input, .contact-form select, .contact-form button {
-        width: 100%;
-    }
-
-   
-    .logo {
-        margin: 10px 0;
-    }
-
-  
-    .grid-container img, .team-gallery img {
-        width: 100%;
-        height: auto;
-    }
-
-    .service-item, .about-team, .intro, .contact-form, .mosaic {
-        margin: 10px;
-    }
-}
-
-/* For mobiles */
-@media (max-width: 480px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 1.5em;
-    }
-
-    .services .service-item, .team-gallery img, .grid-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    
-    .contact-form label, .contact-form input, .contact-form select, .contact-form button {
-        font-size: 14px;
-    }
-
-    /* Margin and padding */
-    .service-item, .about-team, .intro, .contact-form, .mosaic {
-        margin: 5px;
-    }
-
-    
-    .grid-container, .team-gallery {
-        flex-direction: column;
-    }
 }
