@@ -1,0 +1,323 @@
+
+/*header*/
+.menu{
+    background-color: #dcc1a7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/*Corps du site*/
+body { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #dcc1a7;
+}
+
+h2 {
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    border-bottom: 1px solid #000000;
+}
+
+h3 {
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+h4{
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p_description {
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: ##dcc1a7;
+
+    
+}
+
+p {
+    color:#000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.main-center{
+    margin: 60px;
+}
+
+.separateur{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.navigation{
+    display: flex;
+    background-color: #dcc1a7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin-top: 55px;
+    position: sticky;
+    top: 5%;
+}
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-page{
+    color: black; 
+    margin-left: 3%;
+    width: 210px;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    color: #f63e87;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 48px;
+   }
+#logo-header{
+    height: 95px;
+}
+/*aside nav*/
+aside{
+    background-color: #dcc1a7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin-top: 55px;
+    position: sticky;
+    top: 5%;
+}
+aside ul li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+aside ul li a {
+    color: #000000;
+    text-decoration: none; 
+}
+
+aside ul li a:hover {
+    color: #294a71; 
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Separer le site pour integrer la sticky sidebar */
+.separateur{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+/*présentation*/
+
+.presentation{
+    background-color: #dcc1a7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.presentation h1{
+    display: flex;
+    background-color: #dcc1a7;
+    margin-top: 35px;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.presentation p{
+    display: flex;
+    align-items: center;
+    background-color: #dcc1a7;
+
+    width: 920px;
+    height: 170px;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+.social-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.social{
+    height: 48px;
+    margin-left: 15px;
+}
+
+.photo1{
+    height: 345px;
+    width: 230px;
+}
+
+.portrait{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.cover{
+    height: 290px;
+}
+
+/* actualités */
+
+.p_actu{
+    text-align: justify;
+}
+
+/* Gestion de toutes les images de la discographie */
+
+.disco{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+
+.cover_h3{
+
+}
+
+.albums_cover{
+    height: 290px;
+}
+
+/*events*/
+
+.events{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.photo2{
+    height: 250px;
+}
+
+.photo3{
+    height: 250px;
+}
+
+/*clips*/
+
+.slides{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+position: relative;
+max-width: 600px; height: 400px;
+left: 20px;
+}
+
+.slides video, .slides label {
+position: absolute;
+}
+
+.slides input[type="radio"] { display: none; }
+.slides figure {
+visibility: hidden; opacity: 0;
+transition: all 0.5s;
+}
+
+.slides input[type="radio"]:checked + figure {
+visibility: visible; opacity: 1;
+}
+
+.slides label, .slides figcaption {
+color: #fff; background: rgba(0, 0, 0, 0.7);
+}
+
+/* (PART C) SLIDE IMAGES */
+.slides video {
+top: 0; left: 0;
+width: 100%; height: 100%; object-fit: cover;
+}
+
+/* (PART D) SLIDE CAPTION */
+.slides figcaption {
+bottom: 0; left: 0;
+width: 100%; padding: 10px; text-align: center;
+}
+
+/* (PART E) LAST & NEXT BUTTONS */
+.slides label {
+top: 50%; transform: translateY(-50%); 
+display: flex; align-items: center; justify-content: center;
+width: 50px; height: 50px; border-radius: 50%;
+font-size: 1.5em; cursor: pointer;
+}
+.slides label.last { left: -75px; }
+.slides label.next { right: -75px; }
+
+.bouton{
+    height: 70px;
+}
+
+/*form*/
+
+.news-box{
+    background-color: #D9D9D9;
+    width: 350px;
+    padding: 20px;
+}
+
+.marg-top{
+    margin-top: 10px;
+}
+
+/*footer*/
+footer {
+    background-color: #dcc1a7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#logo-footer{
+    height: 150px;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-left: 1px solid #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+

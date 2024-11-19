@@ -1,0 +1,97 @@
+/*Corps du site*/
+body { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #dcc1a7;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.wrapper {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    }
+
+.home_photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0/3S ease, bow-shadow 0.3 ease;
+}
+
+.home_photo:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.8);
+    border: 2px solid white;
+}
+
+
+p {
+    color:#000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.menu{
+    background-color: #dcc1a7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 125px;
+}
+
+#logo-header{
+    height: 95px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.link-page{
+    color: black; 
+    margin-left: 3%;
+    width: 210px;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    background-color: #dcc1a7;
+    border: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 25px;
+}
+
+#logo-footer{
+    height: 150px;
+}

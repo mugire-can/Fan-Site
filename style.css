@@ -109,9 +109,15 @@ details summary:hover {
     font-size: 14px;
     color: #666;
 }
+#logo-header{
+    height: 60px;
+}
 
 /* Contact Form */
 .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
@@ -194,4 +200,7 @@ footer {
     .contact-form {
         padding: 15px;
     }
+}
+#logo-footer{
+    height: 60px;
 }
