@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-nous pour toute question concernant la musique turque et nos fan pages dédiées à Barış Manço et Sezen Aksu.">
+    <title>Contact - Sezen &amp; Barış Fansite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Aller au contenu principal</a>
+    <header>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="sezen_baris.html"><img src="images/sezen_baris_creme.png" alt="logo de Sezen&amp;Baris" id="logo-header"></a></li>
+                <li><a href="sezen_baris.html" class="link-page">Accueil</a></li>
+                <li><a href="sezen_aksu.html" class="link-page">Sezen Aksu</a></li>
+                <li><a href="Baris_Manco_Site.html" class="link-page">Barış Manço</a></li>
+                <li><a href="Vie_prive.html" class="link-page">Vie Privée</a></li>
+                <li><a href="contact.html" class="link-page">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">Contact</h1>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+                <div class="form-group">
+                    <label for="civilite">Civilité:</label>
+                    <select id="civilite" name="civilite">
+                        <option value="">-- Sélectionner --</option>
+                        <option value="mr">Monsieur</option>
+                        <option value="mme">Madame</option>
+                        <option value="non">Non spécifiée</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">Prénom:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="privacy">
+                        <input type="checkbox" id="privacy" name="privacy" required> 
+                        J'accepte la politique de confidentialité
+                    </label>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Navigation footer">
+            <ul>
+                <li><a href="sezen_baris.html"><img src="images/sezen_baris_creme.png" alt="logo de Sezen&amp;Baris" id="logo-footer"></a></li>
+                <li><a href="sezen_baris.html" class="link-page">Accueil</a></li>
+                <li><a href="sezen_aksu.html" class="link-page">Sezen Aksu</a></li>
+                <li><a href="Baris_Manco_Site.html" class="link-page">Barış Manço</a></li>
+                <li><a href="Vie_prive.html" class="link-page">Vie Privée</a></li>
+                <li><a href="contact.html" class="link-page">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Fansite. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
